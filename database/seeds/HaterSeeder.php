@@ -11,6 +11,6 @@ class HaterSeeder extends Seeder
      */
     public function run()
     {
-        //
+        
     }
 }

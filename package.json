@@ -25,6 +25,8 @@
         "sass-loader": "^7.1.0"
     },
     "dependencies": {
+        "@ckeditor/ckeditor5-build-decoupled-document": "^16.0.0",
+        "@ckeditor/ckeditor5-react": "^2.0.0",
         "react-router-dom": "^5.1.2"
     }
 }

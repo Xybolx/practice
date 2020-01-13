@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CKEditor from '@ckeditor/ckeditor5-react';
 import DecoupledEditor from '@ckeditor/ckeditor5-build-decoupled-document';
-import ResumeResult from './ResumeResult';
+// import ResumeResult from './ResumeResult';
 
 const ResumeEditor = () => {
 
@@ -35,7 +35,7 @@ const ResumeEditor = () => {
                     console.log( 'Focus.', editor );
                 } }
             />
-            <ResumeResult content={result} />
+            {/* <ResumeResult content={result} /> */}
         </div>
     );
 };

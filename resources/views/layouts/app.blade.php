@@ -25,7 +25,7 @@
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <!-- {{ config('app.name', 'New Project') }} -->
-                    New Project
+                    E.E.D.M.
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -75,6 +75,12 @@
 
         <main class="py-4">
             @yield('content')
+            <div class="jumbotron bg-dark border border-info">
+                <div class="text-center">
+                    <h1 class="text-info">The name of the logged in user is...</h1>
+                    <h1 class="text-danger border border-info bg-warning jumbotron">⚠ {{ Auth::user()->name }} ⚠</h1>
+                </div>
+            </div>
             <!-- <div id="root"></div> -->
         </main>
     </div>

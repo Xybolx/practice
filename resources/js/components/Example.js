@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Dashboard from './Dashboard';
+import ResumeEditor from './ResumeEditor';
 
 function Example() {
     return (
-        <div className="container">
+        <div className="jumbotron jumbotron-fluid">
             <div className="row justify-content-center">
-                <div className="col-md-8">
-                    <div className="card">
+                <div className="container">
+                    <div className="container">
+                        <Dashboard />
+                        <ResumeEditor />
                     </div>
                 </div>
             </div>
@@ -17,6 +20,6 @@ function Example() {
 
 export default Example;
 
-if (document.getElementById('root')) {
-    ReactDOM.render(<Example />, document.getElementById('root'));
-}
+// if (document.getElementById('root')) {
+//     ReactDOM.render(<Example />, document.getElementById('root'));
+// }

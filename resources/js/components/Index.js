@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import MainApp from './MainApp';
 
-ReactDOM.render(<MainApp />, document.getElementById('none'));
+if (document.getElementById('root')) {
+    ReactDOM.render(<MainApp />, document.getElementById('root'));
+}
